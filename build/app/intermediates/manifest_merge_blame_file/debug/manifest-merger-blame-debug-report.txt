@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.demoagora"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:35:5-67
+14-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:35:22-64
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:36:2-62
+15-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:36:19-59
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:37:2-68
+16-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:37:19-65
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:38:2-77
+17-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:38:19-74
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:39:2-73
+18-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:39:19-70
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:40:2-76
+19-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:40:19-73
+20    <uses-permission android:name="android.permission.BLUETOOTH" />
+20-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:41:2-65
+20-->/Users/jed/demoagora/android/app/src/main/AndroidManifest.xml:41:19-62
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-75
+21-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-72
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-80
+22-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:18:22-77
+23    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+23-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:19:5-21:47
+23-->[:agora_rtc_engine] /Users/jed/demoagora/build/agora_rtc_engine/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-70
+24
+25    <application
+26        android:name="android.app.Application"
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] /Users/jed/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+30        android:label="demoagora" >
+31        <activity
+32            android:name="com.example.demoagora.MainActivity"
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34            android:exported="true"
+35            android:hardwareAccelerated="true"
+36            android:launchMode="singleTop"
+37            android:theme="@style/LaunchTheme"
+38            android:windowSoftInputMode="adjustResize" >
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+47                android:name="io.flutter.embedding.android.NormalTheme"
+48                android:resource="@style/NormalTheme" />
+49
+50            <intent-filter>
+51                <action android:name="android.intent.action.MAIN" />
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+61            android:name="flutterEmbedding"
+62            android:value="2" />
+63    </application>
+64
+65</manifest>
