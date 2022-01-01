@@ -11,8 +11,8 @@ void main() {
 }
 
 /// Define App ID and Token
-const APP_ID = "13576fbb30f44e0ea8b03f485ae6c500";
-const Token = "00613576fbb30f44e0ea8b03f485ae6c500IABrMV1c1xbfutMULBQrGqlYAEuh1f9oihFUQdWZgsKzQgx+f9gAAAAAEAA3+QZI54i8YQEAAQDkiLxh+f9gAAAAAEAAirequ46y7YQEAAQDjrLth";
+const APP_ID = ""; // change to new app ID
+const Token = ""; // change to new token session
 
 class MyApp extends StatefulWidget {
   @override
